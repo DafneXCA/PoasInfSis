@@ -1,0 +1,29 @@
+
+.btn-sidebar{
+    padding-left: 2vw;
+    border: none;
+    background-color:  rgba(169, 0, 0, 1);
+    color: white;
+}
+
+.sidebar-div{
+    margin-top: 12vh;
+    height: 88vh;
+}
+
+#sidebar{
+    width: 17vw;
+    border: none;
+}
+
+.sidebar-content{
+    padding: 10%;
+}
+
+i{
+    padding-right: 1vw;
+}
+
+a{
+    margin-bottom: 3vh;
+}

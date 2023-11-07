@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('detalleOperacion');
 });
+
+Route::post('/registro-archivos', 'UserController@index')->name('registro_archivos');

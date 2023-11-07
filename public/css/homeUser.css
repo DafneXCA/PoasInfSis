@@ -1,0 +1,57 @@
+.content-home-user{
+    padding-top: 12vh;
+    height: 100vh;
+    display: flex;
+}
+
+.content-1{
+    width: 50vw;
+    height: 100%;
+    float: left;
+    padding: 5%;
+    text-align: center;
+}
+
+.content-2{
+    width: 50vw;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+   width: 30vw;
+   height: auto;
+   padding-bottom: 7vh;
+}
+
+.texto{
+    width: 25vw;
+    font-size: 18px;
+}
+
+span{
+    font-size: 20px;
+}
+
+.gestion{
+    width: 25vw;
+    height: 10vh;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2vh 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.gestiones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+}
