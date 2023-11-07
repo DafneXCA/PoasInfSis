@@ -10,17 +10,17 @@
         <span><strong>GESTIONES</strong></span>
 
         <div class="gestiones">
-        <button class="gestion">
+        <a href="{{route('objetivosGestion')}}" class="gestion">
             Gestión 2023
-        </button>
+        </a>
 
-        <button class="gestion">
+        <a href="{{route('objetivosGestion')}}" class="gestion">
             Gestión 2022
-        </button>
+        </a>
 
-        <button class="gestion">
+        <a href="{{route('objetivosGestion')}}" class="gestion">
             Gestión 2021
-        </button>
+        </a>
         </div>
 
     </div>

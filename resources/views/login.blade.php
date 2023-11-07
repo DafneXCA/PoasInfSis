@@ -21,7 +21,7 @@
         </div>
 
         <div class="button">
-            <button><strong>Ingresar</strong></button>
+            <button><strong><a href="{{route('home')}}">Ingresar</a> </strong></button>
         </div>
         </form>
     </div>

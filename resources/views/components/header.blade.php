@@ -1,6 +1,9 @@
 <div>
     <nav>
         <div class="nav">
+          <button id="button-sidebar" class="btn-sidebar" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+            ☰
+          </button>
           @auth
           <button class="btn-sidebar" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
             ☰

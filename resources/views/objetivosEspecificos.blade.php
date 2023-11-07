@@ -4,7 +4,7 @@
 @endsection
 @section('body')
 <div class="body-content">
-    <div class="titulo"><strong>Objetivos de específicos</strong> <button>Añadir</button></div>
+    <div class="titulo"><strong>Objetivos de específicos</strong> <button class="button-añadir">Añadir</button></div>
     <div class="content-div">
         <div class="content-table">
             <table>
@@ -26,7 +26,7 @@
                             
                         @endauth
                         <td>
-                            <a href=""><i class="bi bi-file-earmark-text"></i></a>
+                            <a href="{{route('operacionesProyectos')}}"><i class="bi bi-file-earmark-text"></i></a>
                             <a href=""><i class="bi bi-pen"></i></a>
                             <a href=""><i class="bi bi-trash"></i></a>
                         </td>
@@ -35,7 +35,7 @@
                         <td>Objetivo 2</td>
                         <td>Indicador 2</td>
                         <td>
-                            <a href=""><i class="bi bi-file-earmark-text"></i></a>
+                            <a href="{{route('operacionesProyectos')}}"><i class="bi bi-file-earmark-text"></i></a>
                             <a href=""><i class="bi bi-pen"></i></a>
                             <a href=""><i class="bi bi-trash"></i></a>
                         </td>

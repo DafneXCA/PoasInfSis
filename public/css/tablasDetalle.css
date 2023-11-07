@@ -62,7 +62,7 @@ i{
     color: black;
 }
 
-button{
+.button-añadir{
     color: black;
     background-color: rgba(255, 210, 210, 1);
     padding: 1vh 3vw;
