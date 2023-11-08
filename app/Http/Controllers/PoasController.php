@@ -25,7 +25,9 @@ class PoasController extends Controller
     }
 
     public function detalleOperacion(Request $request){
-        return view('detalleOperacion');
+        $archivos=Archivos::all();
+
+        return view('detalleOperacion',['archivos'=>$archivos]);
     }
 
     public function archivos(Request $request){

@@ -47,6 +47,7 @@ i{
     display: flex;
     padding-bottom: 3vh;
     border-bottom: 1px solid rgb(143, 143, 143);
+    flex-direction: column;
 }
 
 .content-form{
@@ -84,4 +85,14 @@ button{
     background-color: rgb(219, 62, 62);
     color: white;
     padding: 1vh 3vw;
+}
+
+.archivos, .encabezado{
+    display: flex;
+}
+
+.archivos{
+    padding: 2vh 3vw 0vh 3vw;
+    flex-direction: column;
+
 }

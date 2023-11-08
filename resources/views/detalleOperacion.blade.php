@@ -11,7 +11,18 @@
             <div class="detail">
                 <div class="text-center detail-title"><strong>TRIMESTRE 1</strong></div>
                 <div class="content-detail">
-                    <div class="content-archive"><span><i class="bi bi-archive"></i>Archivos respaldatorios</span><div class="button"><button data-bs-toggle="modal" data-bs-target="#staticBackdrop">Añadir</button></div></div>
+                    <div class="content-archive">
+                        <div class="encabezado">
+                            <span><i class="bi bi-archive"></i>Archivos respaldatorios</span>
+                            <div class="button"><button data-bs-toggle="modal" data-bs-target="#staticBackdrop">Añadir</button></div>    
+                        </div>
+                        <div class="archivos">
+                            @foreach ($archivos as $archivo)
+                                <span>{{$archivo->nombre}}</span>  
+                            @endforeach
+                        </div>
+                    </div>
+                    
                     <div class="content-form"><span><i class="bi bi-file-earmark-text"></i>Formularios</span><div class="button"><button>Añadir</button></div></div> 
                 </div>
             </div>
