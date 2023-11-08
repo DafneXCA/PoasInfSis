@@ -41,5 +41,9 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 5%;
+    align-items: center;
 }
 
+.error{
+    color: rgb(207, 30, 30);
+}

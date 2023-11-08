@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Archivos;
+use Illuminate\Support\Facades\Storage;
 
 class PoasController extends Controller
 {
@@ -26,4 +28,17 @@ class PoasController extends Controller
         return view('detalleOperacion');
     }
 
+    public function archivos(Request $request){
+        $archivo=$request->file('document');
+        $ruta=Storage::url($request->file('document')->storeAs('public',$archivo->getClientOriginalName()));
+
+        $file=new Archivos;
+        $file->nombre=$archivo->getClientOriginalName();
+        $file->ruta=$ruta;
+        $file->tipo="archivo";
+        $file->trimestre=1;
+        $file->op_proyectos_id=1;
+        $file->save();
+
+    }
 }

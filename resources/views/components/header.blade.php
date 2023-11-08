@@ -1,9 +1,7 @@
 <div>
     <nav>
         <div class="nav">
-          <button id="button-sidebar" class="btn-sidebar" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
-            ☰
-          </button>
+          
           @auth
           <button class="btn-sidebar" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
             ☰
@@ -17,8 +15,8 @@
         
           @auth
           <div class="auth">
-            <span>Nombre de usuario</span>
-            <a href="">Cerrar sesión</a>
+            <span>{{auth()->user()->nombre}}</span>
+            <span><a href="{{route('logout')}}">Cerrar sesión</a></span>
           </div>
           @endauth 
           

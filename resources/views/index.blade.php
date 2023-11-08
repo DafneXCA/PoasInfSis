@@ -39,21 +39,13 @@
 <body>
     <x-header/>
     @yield('body')
-    <div class="offcanvas offcanvas-start sidebar-div"  id="sidebar" >
-        <div class="offcanvas-body sidebar-content">
-
-            <a href="{{route('home')}}" class="list-group-item"><i class="bi bi-book"></i>Información general</a>
-            <a href="{{route('operacionesProyectos')}}" class="list-group-item"><i class="bi bi-card-checklist"></i>Operaciones y proyectos</a>
-            <a href="#" class="list-group-item"><i class="bi bi-people"></i>Usuarios</a>
-
-        </div>
-    </div>
+    
     @auth
     <div class="offcanvas offcanvas-start sidebar-div"  id="sidebar" >
         <div class="offcanvas-body sidebar-content">
 
             <a href="{{route('home')}}" class="list-group-item"><i class="bi bi-book"></i>Información general</a>
-            <a href="{{route('operacionesPoryecto')}}" class="list-group-item"><i class="bi bi-card-checklist"></i>Operaciones y proyectos</a>
+            <a href="{{route('operacionesProyectos')}}" class="list-group-item"><i class="bi bi-card-checklist"></i>Operaciones y proyectos</a>
             <a href="#" class="list-group-item"><i class="bi bi-people"></i>Usuarios</a>
 
         </div>

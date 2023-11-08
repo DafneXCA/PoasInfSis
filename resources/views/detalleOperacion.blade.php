@@ -51,7 +51,7 @@
               <button class="btn-close" data-bs-dismiss="modal" ></button>
             </div>
             <div class="modal-body">
-                <form action="" method="POST" id="form">
+                <form action="{{route('registro_archivos')}}" method="POST" id="form">
                     <input type="file" id="inputFile">
                 </form>
             </div>

@@ -1,7 +1,7 @@
 .login{
     background-color: white;
     width: 28vw;
-    height: 58vh;
+    min-height: 58vh;
     border-radius: 15px;
     padding: 2.5%;
     text-align: center;
