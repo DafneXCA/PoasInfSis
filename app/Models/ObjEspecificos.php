@@ -10,13 +10,13 @@ class ObjEspecificos extends Model
     use HasFactory;
 
 
-    public function objetivoG(): BelongsTo
+    public function objetivoG()
     {
         return $this->belongsTo(ObjGestion::class, 'obj_gestion_id');
     }
 
 
-    public function operaciones(): HasMany
+    public function operaciones()
     {
         return $this->hasMany(OpProyectos::class, 'obj_especifico_id');
     }

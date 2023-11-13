@@ -9,12 +9,12 @@ class ObjGestion extends Model
 {
     use HasFactory;
 
-public function gestion(): BelongsTo
+public function gestion()
 {
     return $this->belongsTo(Gestion::class, 'gestion_id');
 }
 
-public function objetivosE(): HasMany
+public function objetivosE()
 {
     return $this->hasMany(ObjEspecificos::class, 'obj_gestion_id');
 }

@@ -8,21 +8,15 @@
 <div class="content-home-user">
     <div class="content-1">
         <span><strong>GESTIONES</strong></span>
-
         <div class="gestiones">
-        <a href="{{route('objetivosGestion')}}" class="gestion">
-            Gestión 2023
-        </a>
-
-        <a href="{{route('objetivosGestion')}}" class="gestion">
-            Gestión 2022
-        </a>
-
-        <a href="{{route('objetivosGestion')}}" class="gestion">
-            Gestión 2021
-        </a>
+            @foreach ($gestiones as $gestion)
+                
+                    <a href="{{route('objetivosGestion',['id'=>$gestion->id])}}" class="gestion">
+                        Gestión {{$gestion->nombre}}
+                    </a>
+                
+            @endforeach
         </div>
-
     </div>
     <div class="content-2">
         <img src="{{asset('images/undraw.png')}}" class="image">

@@ -27,6 +27,7 @@ input{
     width: 20vw;
     height: 6vh;
     margin-top: 3%;
+    outline: none; 
 }
 
 .input{
@@ -46,6 +47,7 @@ button{
     height: 6.5vh;
     border-radius: 8px;
     border: none;
-    background-color:rgba(255, 210, 210, 1) ;
+    background-color:rgb(151, 157, 255) ;
+    color: black;
 }
 

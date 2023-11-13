@@ -20,7 +20,7 @@ class User extends Authenticatable
         return $this->hasMany(OpProyectos::class, 'user_id');
     }
 
-    public function archivos(): HasManyThrough
+    public function archivos()
     {
         return $this->hasManyThrough(Archivos::class, OpProyectos::class,'user_id','op_proyectos_id');
     }

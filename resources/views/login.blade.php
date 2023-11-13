@@ -28,7 +28,7 @@
         </div>
 
         <div class="button">
-            <button>Ingresar</button>
+            <button> <strong>Ingresar</strong> </button>
         </div>
         </form>
     </div>

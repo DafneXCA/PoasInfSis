@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Archivos extends Model
 {
     use HasFactory;
+
+
+    public function user()
+    {
+        return $this->belongsTo(OpProyectos::class, 'op_proyectos_id');
+    }
 }

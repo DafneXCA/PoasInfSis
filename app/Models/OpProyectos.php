@@ -14,18 +14,18 @@ class OpProyectos extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function objetivoE(): BelongsTo
+    public function objetivoE()
     {
         return $this->belongsTo(ObjEspecificos::class, 'obj_especifico_id');
     }
 
 
-    public function user(): BelongsTo
+    public function user()
     {
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function archivos(): HasMany
+    public function archivos()
     {
         return $this->hasMany(Archivos::class, 'op_proyectos_id');
     }

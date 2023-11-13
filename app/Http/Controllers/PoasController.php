@@ -4,43 +4,39 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Archivos;
+use App\Models\OpProyectos;
 use Illuminate\Support\Facades\Storage;
 
 class PoasController extends Controller
 {
-    public function objetivosGestion(Request $request){
-        return view('objetivosGestion');
-    }
+    public function detalleOperacion($id){
+        $proyecto=OpProyectos::find($id);
 
-    public function objetivosEspecificos(Request $request){
-        return view('objetivosEspecificos');
-    }
-
-    public function operacionesProyectos(Request $request){
-        return view('operacionesProyectos');
-    }
-
-    public function operacionesAsignadas(Request $request){
-        return view('operacionesAsignadas');
-    }
-
-    public function detalleOperacion(Request $request){
-        $archivos=Archivos::all();
-
-        return view('detalleOperacion',['archivos'=>$archivos]);
+        return view('detalleOperacion',['proyecto'=>$proyecto]);
     }
 
     public function archivos(Request $request){
+        
         $archivo=$request->file('document');
         $ruta=Storage::url($request->file('document')->storeAs('public',$archivo->getClientOriginalName()));
 
         $file=new Archivos;
         $file->nombre=$archivo->getClientOriginalName();
         $file->ruta=$ruta;
-        $file->tipo="archivo";
-        $file->trimestre=1;
-        $file->op_proyectos_id=1;
+        $file->tipo=$request->tipo;
+        $file->trimestre=$request->trimestre;
+        $file->op_proyectos_id=$request->id_proyecto;
         $file->save();
-
+       
     }
+
+    public function destroy($id){
+        $archivo=Archivos::find($id);
+
+        $id=$archivo->op_proyectos_id;
+        $archivo->delete();
+
+        return redirect(route('detalleOperacion',['id'=>$id]));
+    }   
+    
 }

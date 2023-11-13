@@ -9,7 +9,7 @@ class Gestion extends Model
 {
     use HasFactory;
 
-    public function objetivosG(): HasMany
+    public function objetivosG()
     {
         return $this->hasMany(ObjGestion::class, 'gestion_id');
     }

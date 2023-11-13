@@ -15,8 +15,8 @@
         
           @auth
           <div class="auth">
-            <span>{{auth()->user()->nombre}}</span>
-            <span><a href="{{route('logout')}}">Cerrar sesión</a></span>
+            <span class="info-header">{{auth()->user()->nombre}}</span>
+            <span class="info-header"><a href="{{route('logout')}}" >Cerrar sesión</a></span>
           </div>
           @endauth 
           

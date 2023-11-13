@@ -20,6 +20,7 @@
 .detail-content{
     display: grid;
     row-gap: 3vh;
+    padding-bottom: 5vh;
 }
 
 .detail{
@@ -39,8 +40,8 @@
 }
 
 i{
-    font-size: 25px;
-    margin-right: 2vw;
+    font-size: 20px;
+    color: black;
 }
 
 .content-archive{
@@ -54,6 +55,7 @@ i{
     display: flex;
     padding-top: 2vh;
    padding-bottom: 3vh;
+   flex-direction: column;
    
 }
 
@@ -69,9 +71,9 @@ span{
 
 button{
     border: none;
-    padding: 0vh 2vw;
+    padding: 1vh 2vw;
     border-radius: 10px;
-    background-color:  rgba(255, 210, 210, 1);;
+    background-color: rgb(151, 157, 255);
 }
 
 #modal{
@@ -81,12 +83,6 @@ button{
     border-radius: 15px;
 }
 
-.cancel{
-    background-color: rgb(219, 62, 62);
-    color: white;
-    padding: 1vh 3vw;
-}
-
 .archivos, .encabezado{
     display: flex;
 }
@@ -94,5 +90,30 @@ button{
 .archivos{
     padding: 2vh 3vw 0vh 3vw;
     flex-direction: column;
-
 }
+
+.fila{
+    width: 100%;
+    display: flex;
+}
+
+.columna_1{
+    display: flex;
+    width: 70%;
+}
+
+.columna_2{
+    display: flex;
+    justify-content: space-evenly ;
+    width: 30%;
+    
+}
+
+.guardar{
+    color: white;
+    background-color: rgb(143, 143, 143);
+    padding: 1vh 3vw;
+    border: none;
+    border-radius: 10px;
+}
+
